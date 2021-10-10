@@ -10,9 +10,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Deploy with gh-pages
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/caioeverest.github.io.git
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.O_BRABO }}
-
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.O_BRABO }}
+          publish_dir: ./public
