@@ -18,28 +18,23 @@ export default function Nav(props) {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" enableColorOnDark={true}>
         <Toolbar>
-          <Button color="inherit">
-            <Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>
+          <Link activeClass="active" to="home" spy={true} smooth={true} offset={-70} duration={500}>
+            <Button color="inherit">
               home
-            </Link>
-          </Button>
-          <Button color="inherit">
-            <Link activeClass="active" to="about-me" spy={true} smooth={true} offset={-70} duration={500}>
+            </Button>
+          </Link>
+          <Link activeClass="active" to="about-me" spy={true} smooth={true} offset={-70} duration={500}>
+            <Button color="inherit">
               about-me
-            </Link>
-          </Button>
-          <Button color="inherit">
-            <Link activeClass="active" to="section-2" spy={true} smooth={true} offset={-70} duration={500}>
-              section
-            </Link>
-          </Button>
-          <Button color="inherit">
-            <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+            </Button>
+          </Link>
+          <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration={500}>
+            <Button color="inherit">
               contact
-            </Link>
-          </Button>
+            </Button>
+          </Link>
           <Box sx={{ flexGrow: 1 }} />
           <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
             {theme.palette.mode === 'dark' ? <Brightness7Icon /> : <Brightness4Icon />}
