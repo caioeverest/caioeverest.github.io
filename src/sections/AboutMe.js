@@ -21,7 +21,7 @@ const AboutMe = () => {
                 but specialized on backend, focusing on the area of distributed transactions. I am also a enthusiast of IoT and of integrating
                 our everyday more with technology :).
 
-                Currently, I'm working at <a href="https://cloudwalk.io">CloudWalk</a> as a Software Engineer.
+                Currently, I'm working at <a href="https://willbank.com.br">WillBank</a> as a Software Engineer.
               </Typography>
             </Item>
 
